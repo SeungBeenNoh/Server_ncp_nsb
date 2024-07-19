@@ -2,7 +2,7 @@
 FROM openjdk:17
 
 # 변수 JAR_FILE에 build/libs/프로젝트명-0.0.1-SNAPSHOT.jar 경로를 기본값으로 설정
-ARG JAR_FILE=build/libs/simple1dock-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=build/libs/simple1-0.0.1-SNAPSHOT.jar
 
 # 변수에 지정된 경로에 있는 JAR 파일을 Docker 이미지의 루트 디렉토리에 app.jar라는 이름으로 복사
 COPY ${JAR_FILE} app.jar
